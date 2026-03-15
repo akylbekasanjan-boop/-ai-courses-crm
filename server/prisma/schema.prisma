@@ -32,6 +32,8 @@ enum LeadStatus {
   thinking
   rejected
   paid
+  qualified
+  converted
 }
 
 enum DealStatus {

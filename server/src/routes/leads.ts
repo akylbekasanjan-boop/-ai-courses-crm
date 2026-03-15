@@ -37,7 +37,7 @@ leadsRouter.post('/public', async (req, res: Response) => {
         status: 'new', // Все новые заявки попадают в "Заявка"
         comment: data.comment,
         tags: data.tags || [],
-        assignedToId: manager?.id,
+        assignedToId: manager?.id || 'default',
       },
     });
 

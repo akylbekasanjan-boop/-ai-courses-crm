@@ -3,7 +3,7 @@
   "build": {
     "builder": "NIXPACKS",
     "buildCommand": "npm install && npx prisma generate && npm run build",
-    "startCommand": "npm run start"
+    "startCommand": "node -r tsx src/index.ts"
   },
   "deploy": {
     "numReplicas": 1,
